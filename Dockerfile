@@ -23,6 +23,7 @@ RUN update-alternatives --install "/usr/bin/ant" "ant" "/opt/ant/bin/ant" 1 && \
 
 # Add the files
 ADD rootfs /
+ADD https://repo1.maven.org/maven2/org/apache/ivy/ivy/2.5.0/ivy-2.5.0.jar /opt/ant/lib
 
 # change to root folder
 WORKDIR /root
